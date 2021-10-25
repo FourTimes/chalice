@@ -67,3 +67,36 @@ def index():
     return {'hello': 'vanguard team'}
 
 ```
+#### Deploying
+
+Let's deploy this app. Make sure you're in the helloworld directory and run chalice deploy:
+
+```bash
+$ chalice deploy
+Creating deployment package.
+Creating IAM role: vanguard-dev
+Creating lambda function: vanguard-dev
+Creating Rest API
+Resources deployed:
+  - Lambda ARN: arn:aws:lambda:us-west-2:12345:function:vanguard-dev
+  - Rest API URL: https://abcd.execute-api.us-west-2.amazonaws.com/api/
+```
+
+You now have an API up and running using API Gateway and Lambda:
+
+```bash
+
+$ curl https://qxea58oupc.execute-api.us-west-2.amazonaws.com/api/
+{"hello": "vanguard team"}
+
+```
+#### Cleanup
+
+If you're done experimenting with Chalice and you'd like to cleanup, you can use the chalice delete command, and Chalice will delete all the resources it created when running the chalice deploy command.
+
+```bash
+$ chalice delete
+Deleting Rest API: qxea58oupc
+Deleting function aws:arn:lambda:region:123456789:vanguard-dev
+Deleting IAM Role vanguard-dev
+```
