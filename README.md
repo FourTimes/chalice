@@ -1,18 +1,18 @@
 # chalice
 Chalice is a framework for writing serverless apps in python. It allows you to quickly create and deploy applications that use AWS Lambda. 
 
-It provides:
+#### It provides:
   
   1. A command line tool for creating, deploying, and managing your app
   2. A decorator based API for integrating with Amazon API Gateway, Amazon S3, Amazon SNS, Amazon SQS, and other AWS services.
   3. Automatic IAM policy generation
 
-Requirements
+#### Requirements
 
   python3 -m pip install botocore boto3
   python3 -m pip install chalice
   
-initialize the chalice framwork
+#### Create the directory
 
 ```bash
 
