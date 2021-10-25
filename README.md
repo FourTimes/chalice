@@ -100,3 +100,13 @@ Deleting Rest API: qxea58oupc
 Deleting function aws:arn:lambda:region:123456789:vanguard-dev
 Deleting IAM Role vanguard-dev
 ```
+At this point, there are several next steps you can take.
+
+    1. Tutorials - Choose from among several guided tutorials that will give you step-by-step examples of various features of Chalice.
+    https://aws.github.io/chalice/tutorials/index.html
+    2. Topics - Deep dive into documentation on specific areas of Chalice. This contains more detailed documentation than the tutorials.
+    https://aws.github.io/chalice/topics/index.html
+    3. API Reference - Low level reference documentation on all the classes and methods that are part of the public API of Chalice.
+    https://aws.github.io/chalice/api.html
+
+ 
